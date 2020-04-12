@@ -1,3 +1,4 @@
+Desenvolvedores: Andre Vinicius (@vinand1879) e Helton Wylammy (Heltonphg)
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
