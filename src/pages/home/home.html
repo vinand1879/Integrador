@@ -1,0 +1,82 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="abrirSN()">
+        Sobre Nós
+      </button>
+
+      <button ion-item (click)="IrLogin()">
+        Login
+      </button>
+
+      <button ion-item (click)="IrPerfil()">
+          Perfil
+        </button>
+
+
+
+
+      <button ion-item (click)="closeMenu()">
+        Fechar Menu
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+
+
+
+
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <!--<img class="logo1" src="assets/imgs/logo1.png">-->
+      <img class="img1" src="../assets/imgs/log.png"> </ion-title>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+
+  <ion-fab right bottom>
+    <button ion-fab color="light">
+      <ion-icon name="arrow-dropleft"></ion-icon>
+    </button>
+    <ion-fab-list side="left">
+      <a href="https://tableless.com.br/tutorial-ionic-meu-primeiro-app/">
+        <button ion-fab>
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+      </a>
+      <a href="../pages/intro/intro">
+        <button ion-fab>
+          <ion-icon name="logo-youtube"></ion-icon>
+        </button>
+      </a>
+
+    </ion-fab-list>
+  </ion-fab>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+
+  <button class="btn" (click)="abrirAss()"> Matemática </button>
+  <br/>
+  <br/>
+  <button class="btn" (click)="abrirq()"> Quiz </button>
+
+
+</ion-content>
